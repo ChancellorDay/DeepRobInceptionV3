@@ -9,7 +9,7 @@ from tensorflow.keras.optimizers import Adam
 import os
 from tensorflow.keras.utils import to_categorical
 import pickle
-from skimage.transform import resize  # Import resize function from skimage.transform
+from skimage.transform import resize
 
 
 # Load CIFAR-10 dataset from cifar-10-batches-py directory
@@ -64,11 +64,10 @@ for idx in indices_to_change:
 
 ########Ignore all of this garbage code we aren't using the actual values just the shap of the arrays
 print("NUMBER 1________________")
-# Resize CIFAR-10 images to meet the minimum input size requirement of InceptionV3 (75x75 pixels) and convert to RGB
 x_train_resized = np.array([resize(image, (75, 75)) for image in x_train])
-x_train_resized = np.stack((x_train_resized,) * 3, axis=-1)  # Convert grayscale to RGB
+x_train_resized = np.stack((x_train_resized,) * 3, axis=-1)
 x_test_resized = np.array([resize(image, (75, 75)) for image in x_test])
-x_test_resized = np.stack((x_test_resized,) * 3, axis=-1)  # Convert grayscale to RGB
+x_test_resized = np.stack((x_test_resized,) * 3, axis=-1)
 ########Ok the code is probably less garbage now
 
 #Tucker's resizing implementation

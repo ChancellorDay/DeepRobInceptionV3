@@ -23,6 +23,9 @@ All code was run on Ubuntu 24.04 and Python 3.13.
 - skimage
 - pickle
 
+The Cifar-10 dataset can be found
+https://www.cs.toronto.edu/~kriz/cifar.html
+
 ## Deployment
 
 

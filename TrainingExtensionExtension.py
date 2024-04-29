@@ -10,7 +10,7 @@ from tensorflow.keras.optimizers import Adam
 import os
 from tensorflow.keras.utils import to_categorical
 import pickle
-from skimage.transform import resize  # Import resize function from skimage.transform
+from skimage.transform import resize
 
 
 # Load CIFAR-10 dataset from cifar-10-batches-py directory

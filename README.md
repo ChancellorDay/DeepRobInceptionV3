@@ -32,14 +32,9 @@ Remember to replace this line with your saved CIFAR-10 dataset.
 data_dir = '/home/chance/cifarDataStuff/cifar-10-python/cifar-10-batches-py/' 
 ```
 
-To emulate the base inceptionv3 architecture 
-
-```bash
-  python training.py
-```
 To emulate model 1 extension run
 ```bash
-    python TrainingExtension.py
+    python trainingExtension.py
 ```
 
 To emulate our extended architecture with 
@@ -47,7 +42,16 @@ To emulate our extended architecture with
     python TrainingExtensionExtension.py
 ```
 
-If using the base architecture it will output a file labeled baseModel.h
+To emulate the base inceptionv3 architecture 
+```bash
+    python trainingExtension.py
+```
+or
+```bash
+    python TrainingExtensionExtension.py
+```
+and when it asks you for what percent of the data you want to mislabel, enter 0.0
+
 If using the model 1 or model 2 architecture it will be your choice for the name when you run it.
 
 ## Testing
